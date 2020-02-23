@@ -1,0 +1,11 @@
+{
+    "delay": 2500,
+    "events": {
+        "restart": "fuser -k 8081/tcp",
+        "crash": "fuser -k 8081/tcp"
+    },
+    "execMap": {
+        "js": "sucrase-node"
+    },
+    "ext": "js,html,css,json"
+}

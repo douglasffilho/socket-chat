@@ -1,0 +1,23 @@
+{
+  "name": "socket-chat",
+  "version": "1.0.0",
+  "description": "Chat develped under Socket.io",
+  "main": "src/server.js",
+  "repository": "git@github.com:douglasffilho/socket-chat.git",
+  "author": "Douglas Fernandes <douglasf.filho@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "debug": "node --inspect-brk -r sucrase/register src/server.js",
+    "dev": "nodemon src/server.js",
+    "prod": "sucrase-node src/server.js"
+  },
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0",
+    "sucrase": "^3.12.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
